@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `iridium` (
+CREATE TABLE IF NOT EXISTS `tableName` (
   `Id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'ID / Primary key',
   `DateTime` datetime NOT NULL COMMENT 'Date and Time of Readings',
   `TempOutCur` decimal(4,1) NOT NULL COMMENT 'Current Outdoor Temperature',
