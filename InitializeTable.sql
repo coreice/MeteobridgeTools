@@ -1,4 +1,10 @@
-CREATE TABLE IF NOT EXISTS `tableName` (
+/* InitializeTable.sql */
+/* Fill up a new table with common readings from a (Davis) weather station. */
+/* The row names are following the template guidelines set by MeteoBridge (see https://wiki.meteobridge.com/wiki/index.php/Templates) */
+
+SET @tableName = `WeatherData`; /* Update tableName variable with the name of your own table */
+
+CREATE TABLE IF NOT EXISTS @tableName (
   `Id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'ID / Primary key',
   `DateTime` datetime NOT NULL COMMENT 'Date and Time of Readings',
   `TempOutCur` decimal(4,1) NOT NULL COMMENT 'Current Outdoor Temperature',
